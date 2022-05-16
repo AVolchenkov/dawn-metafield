@@ -404,13 +404,6 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-          <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-            <p class="cart-attribute__field">
-              <label for="browser-name">Browser</label>
-              <input id="browser-name" type="text" name="attributes[Browser name]" value="{{ cart.attributes["Your name"] }}">
-            </p>
-            <button type="submit" id="fake-submit">text</button>
-          </form>
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>

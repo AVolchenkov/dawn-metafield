@@ -1,7 +1,5 @@
+const userBrowserInfo = navigator.userAgent.toString();
 
-document.querySelector(".shopify-payment-button__button").addEventListener("click", function () {
-  // setOrderMetafield()
-})
-document.querySelector("#fake-submit").addEventListener("click", function (e) {
-  e.preventDefault()
+document.querySelector(".button-checkout").addEventListener("click", function () {
+  document.querySelector("#browser-name").value = userBrowserInfo
 })

@@ -291,9 +291,9 @@
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
-    <p class="cart-attribute__field">
-      <label for="browser-name">Browser</label>
-      <input id="browser-name" type="text" name="attributes[Browser name]" value="{{ cart.attributes["Your name"] }}">
+    <p class="cart-attribute__field hide">
+      <label for="browser-name-cart">Browser</label>
+      <input id="browser-name-cart" type="text" name="attributes[Browser name]" value="{{ cart.attributes["Your name"] }}">
     </p>
   </form>
 </cart-items>
